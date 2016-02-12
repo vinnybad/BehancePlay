@@ -1,15 +1,14 @@
 //
-//  BEPCreativesViewController.h
+//  BEPPrefixHeader.pch
 //  BehancePlay
 //
 //  Created by Vinayak Badrinathan on 2/11/16.
 //  Copyright © 2016 Vinayak Badrinathan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#ifndef BEPPrefixHeader_pch
+#define BEPPrefixHeader_pch
 
-@interface BEPCreativesViewController : UIViewController
+#import "BEPCommon.h"
 
-
-@end
-
+#endif /* BEPPrefixHeader_pch */

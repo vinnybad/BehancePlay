@@ -14,6 +14,12 @@
 		2B60FB1A1C6D67D300EC3071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B60FB181C6D67D300EC3071 /* LaunchScreen.storyboard */; };
 		2B60FB251C6D67D300EC3071 /* BehancePlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB241C6D67D300EC3071 /* BehancePlayTests.m */; };
 		2B60FB301C6D67D300EC3071 /* BehancePlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB2F1C6D67D300EC3071 /* BehancePlayUITests.m */; };
+		2B60FB411C6D6D3500EC3071 /* BEPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB401C6D6D3500EC3071 /* BEPUser.m */; };
+		2B60FB461C6D6EEE00EC3071 /* BEPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB451C6D6EEE00EC3071 /* BEPClient.m */; };
+		2B60FB4B1C6D6F6D00EC3071 /* BEPCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB4A1C6D6F6D00EC3071 /* BEPCommon.m */; };
+		2B60FB4E1C6D701700EC3071 /* BEPUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB4D1C6D701700EC3071 /* BEPUserService.m */; };
+		767225E39C6443517E2C67BC /* libPods-BehancePlayTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DA49B5426B563BF8C1B07C /* libPods-BehancePlayTests.a */; };
+		9BCE51C9D3439AE454834A82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D90C5CCBBFEBC8CF766B88 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,21 @@
 		2B60FB2B1C6D67D300EC3071 /* BehancePlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BehancePlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B60FB2F1C6D67D300EC3071 /* BehancePlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BehancePlayUITests.m; sourceTree = "<group>"; };
 		2B60FB311C6D67D300EC3071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B60FB3F1C6D6D3500EC3071 /* BEPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEPUser.h; sourceTree = "<group>"; };
+		2B60FB401C6D6D3500EC3071 /* BEPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPUser.m; sourceTree = "<group>"; };
+		2B60FB441C6D6EEE00EC3071 /* BEPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEPClient.h; sourceTree = "<group>"; };
+		2B60FB451C6D6EEE00EC3071 /* BEPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPClient.m; sourceTree = "<group>"; };
+		2B60FB481C6D6F1500EC3071 /* BEPPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEPPrefixHeader.pch; sourceTree = "<group>"; };
+		2B60FB491C6D6F6D00EC3071 /* BEPCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEPCommon.h; sourceTree = "<group>"; };
+		2B60FB4A1C6D6F6D00EC3071 /* BEPCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPCommon.m; sourceTree = "<group>"; };
+		2B60FB4C1C6D701700EC3071 /* BEPUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEPUserService.h; sourceTree = "<group>"; };
+		2B60FB4D1C6D701700EC3071 /* BEPUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPUserService.m; sourceTree = "<group>"; };
+		4B551248C46F146DF2621B11 /* Pods-BehancePlayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BehancePlayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BehancePlayTests/Pods-BehancePlayTests.release.xcconfig"; sourceTree = "<group>"; };
+		4BE0F4CA870194359761268C /* Pods-BehancePlayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BehancePlayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BehancePlayTests/Pods-BehancePlayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BA01A77ACDC27E23CFF1233 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A5D90C5CCBBFEBC8CF766B88 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEAB86A831930E92D4A08A1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D0DA49B5426B563BF8C1B07C /* libPods-BehancePlayTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BehancePlayTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BCE51C9D3439AE454834A82 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767225E39C6443517E2C67BC /* libPods-BehancePlayTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,8 @@
 				2B60FB231C6D67D300EC3071 /* BehancePlayTests */,
 				2B60FB2E1C6D67D300EC3071 /* BehancePlayUITests */,
 				2B60FB081C6D67D200EC3071 /* Products */,
+				3258CDDE5873A1F71CAA87E0 /* Pods */,
+				B1475B7AF3F70FC80BC46375 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +126,8 @@
 			children = (
 				2B60FB0D1C6D67D300EC3071 /* AppDelegate.h */,
 				2B60FB0E1C6D67D300EC3071 /* AppDelegate.m */,
-				2B60FB101C6D67D300EC3071 /* BEPCreativesViewController.h */,
-				2B60FB111C6D67D300EC3071 /* BEPCreativesViewController.m */,
-				2B60FB161C6D67D300EC3071 /* Assets.xcassets */,
-				2B60FB181C6D67D300EC3071 /* LaunchScreen.storyboard */,
-				2B60FB1B1C6D67D300EC3071 /* Info.plist */,
+				2B60FB421C6D6D3C00EC3071 /* Shared */,
+				2B60FB3D1C6D6CFC00EC3071 /* Screens */,
 				2B60FB0A1C6D67D300EC3071 /* Supporting Files */,
 			);
 			path = BehancePlay;
@@ -114,7 +136,11 @@
 		2B60FB0A1C6D67D300EC3071 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B60FB161C6D67D300EC3071 /* Assets.xcassets */,
+				2B60FB181C6D67D300EC3071 /* LaunchScreen.storyboard */,
+				2B60FB1B1C6D67D300EC3071 /* Info.plist */,
 				2B60FB0B1C6D67D300EC3071 /* main.m */,
+				2B60FB481C6D6F1500EC3071 /* BEPPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,6 +163,82 @@
 			path = BehancePlayUITests;
 			sourceTree = "<group>";
 		};
+		2B60FB3D1C6D6CFC00EC3071 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2B60FB3E1C6D6D0B00EC3071 /* Creatives */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		2B60FB3E1C6D6D0B00EC3071 /* Creatives */ = {
+			isa = PBXGroup;
+			children = (
+				2B60FB101C6D67D300EC3071 /* BEPCreativesViewController.h */,
+				2B60FB111C6D67D300EC3071 /* BEPCreativesViewController.m */,
+			);
+			name = Creatives;
+			sourceTree = "<group>";
+		};
+		2B60FB421C6D6D3C00EC3071 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2B60FB491C6D6F6D00EC3071 /* BEPCommon.h */,
+				2B60FB4A1C6D6F6D00EC3071 /* BEPCommon.m */,
+				2B60FB431C6D6D4200EC3071 /* Domain */,
+				2B60FB471C6D6EF200EC3071 /* Network Clients */,
+				2B60FB4F1C6D703900EC3071 /* Services */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		2B60FB431C6D6D4200EC3071 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2B60FB3F1C6D6D3500EC3071 /* BEPUser.h */,
+				2B60FB401C6D6D3500EC3071 /* BEPUser.m */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		2B60FB471C6D6EF200EC3071 /* Network Clients */ = {
+			isa = PBXGroup;
+			children = (
+				2B60FB441C6D6EEE00EC3071 /* BEPClient.h */,
+				2B60FB451C6D6EEE00EC3071 /* BEPClient.m */,
+			);
+			name = "Network Clients";
+			sourceTree = "<group>";
+		};
+		2B60FB4F1C6D703900EC3071 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B60FB4C1C6D701700EC3071 /* BEPUserService.h */,
+				2B60FB4D1C6D701700EC3071 /* BEPUserService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		3258CDDE5873A1F71CAA87E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAEAB86A831930E92D4A08A1 /* Pods.debug.xcconfig */,
+				8BA01A77ACDC27E23CFF1233 /* Pods.release.xcconfig */,
+				4BE0F4CA870194359761268C /* Pods-BehancePlayTests.debug.xcconfig */,
+				4B551248C46F146DF2621B11 /* Pods-BehancePlayTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1475B7AF3F70FC80BC46375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5D90C5CCBBFEBC8CF766B88 /* libPods.a */,
+				D0DA49B5426B563BF8C1B07C /* libPods-BehancePlayTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B60FB341C6D67D300EC3071 /* Build configuration list for PBXNativeTarget "BehancePlay" */;
 			buildPhases = (
+				BE493C2AFF5030AA217B7583 /* Check Pods Manifest.lock */,
 				2B60FB031C6D67D200EC3071 /* Sources */,
 				2B60FB041C6D67D200EC3071 /* Frameworks */,
 				2B60FB051C6D67D200EC3071 /* Resources */,
+				0C99A85BABAE7140B9332471 /* Embed Pods Frameworks */,
+				06F5DFC6B7F02EE32B679FCD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B60FB371C6D67D300EC3071 /* Build configuration list for PBXNativeTarget "BehancePlayTests" */;
 			buildPhases = (
+				EF9659BF35444384DB14AC76 /* Check Pods Manifest.lock */,
 				2B60FB1C1C6D67D300EC3071 /* Sources */,
 				2B60FB1D1C6D67D300EC3071 /* Frameworks */,
 				2B60FB1E1C6D67D300EC3071 /* Resources */,
+				20316779BBEA272A0E73297E /* Embed Pods Frameworks */,
+				09559B5263F15AE2664036B8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,14 +369,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06F5DFC6B7F02EE32B679FCD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09559B5263F15AE2664036B8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BehancePlayTests/Pods-BehancePlayTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C99A85BABAE7140B9332471 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20316779BBEA272A0E73297E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BehancePlayTests/Pods-BehancePlayTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE493C2AFF5030AA217B7583 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9659BF35444384DB14AC76 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B60FB031C6D67D200EC3071 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B60FB4B1C6D6F6D00EC3071 /* BEPCommon.m in Sources */,
+				2B60FB461C6D6EEE00EC3071 /* BEPClient.m in Sources */,
 				2B60FB121C6D67D300EC3071 /* BEPCreativesViewController.m in Sources */,
 				2B60FB0F1C6D67D300EC3071 /* AppDelegate.m in Sources */,
+				2B60FB4E1C6D701700EC3071 /* BEPUserService.m in Sources */,
 				2B60FB0C1C6D67D300EC3071 /* main.m in Sources */,
+				2B60FB411C6D6D3500EC3071 /* BEPUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,8 +604,10 @@
 		};
 		2B60FB351C6D67D300EC3071 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAEAB86A831930E92D4A08A1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = BehancePlay/BEPPrefixHeader.pch;
 				INFOPLIST_FILE = BehancePlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinnybad.BehancePlay;
@@ -410,8 +617,10 @@
 		};
 		2B60FB361C6D67D300EC3071 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BA01A77ACDC27E23CFF1233 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = BehancePlay/BEPPrefixHeader.pch;
 				INFOPLIST_FILE = BehancePlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinnybad.BehancePlay;
@@ -421,6 +630,7 @@
 		};
 		2B60FB381C6D67D300EC3071 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE0F4CA870194359761268C /* Pods-BehancePlayTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BehancePlayTests/Info.plist;
@@ -433,6 +643,7 @@
 		};
 		2B60FB391C6D67D300EC3071 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B551248C46F146DF2621B11 /* Pods-BehancePlayTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BehancePlayTests/Info.plist;
