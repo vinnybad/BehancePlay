@@ -10,4 +10,8 @@
 
 @interface BEPUserService : NSObject
 
++ (instancetype)shared;
+
+- (void)fetchUsersMatchingQuery:(NSString *)query andOnCompletion:(void (^)(NSError *error, NSArray *users))completionBlock;
+
 @end

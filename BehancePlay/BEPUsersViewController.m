@@ -21,6 +21,7 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
 };
 
 @interface BEPUsersViewController ()<UICollectionViewDataSource>
+@property (nonatomic, strong) BEPUserService *userService;
 @property (nonatomic, strong) NSArray *userResults;
 @end
 
@@ -46,13 +47,21 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
     
     [self registerCellTypes];
 
-    BEPUser *user = [BEPUser new];
-    self.userResults = @[user, user];
+    NSString *query = @"";
+    [self updateResultsWithQuery:query];
+}
+
+- (void)updateResultsWithQuery:(NSString *)query {
+    __weak typeof(self) weakSelf = self;
+    [self.userService fetchUsersMatchingQuery:query andOnCompletion:^(NSError *error, NSArray *users) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        strongSelf.userResults = users;
+        [strongSelf.collectionView reloadData];
+    }];
 }
 
 - (void)registerCellTypes {
     NSArray *cellTypes = @[ BEPUsersViewControllerCellType.UserCell ];
-
     [cellTypes bk_each:^(NSString *cellId) {
         UINib *nib = [UINib nibWithNibName:cellId bundle:nil];
         [self.collectionView registerNib:nib forCellWithReuseIdentifier:cellId];
@@ -80,6 +89,13 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
     [cell configureWithUser:user];
 
     return cell;
+}
+
+- (BEPUserService *)userService {
+    if( !_userService ) {
+        _userService = [BEPUserService shared];
+    }
+    return _userService;
 }
 
 
