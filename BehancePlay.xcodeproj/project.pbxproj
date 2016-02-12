@@ -22,6 +22,7 @@
 		2B60FB541C6D715700EC3071 /* BEPUsersViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B60FB521C6D715700EC3071 /* BEPUsersViewControllerCollectionViewCell.xib */; };
 		2B60FB581C6D7C2F00EC3071 /* BEPProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB571C6D7C2F00EC3071 /* BEPProgressHUD.m */; };
 		2B60FB5C1C6D83A400EC3071 /* BEPClientUsersResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB5B1C6D83A400EC3071 /* BEPClientUsersResponse.m */; };
+		2B60FB611C6D8A3B00EC3071 /* BEPUsersViewControllerSearchBarReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB5F1C6D8A3B00EC3071 /* BEPUsersViewControllerSearchBarReusableView.m */; };
 		767225E39C6443517E2C67BC /* libPods-BehancePlayTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DA49B5426B563BF8C1B07C /* libPods-BehancePlayTests.a */; };
 		9BCE51C9D3439AE454834A82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D90C5CCBBFEBC8CF766B88 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,8 @@
 		2B60FB571C6D7C2F00EC3071 /* BEPProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPProgressHUD.m; sourceTree = "<group>"; };
 		2B60FB5A1C6D83A400EC3071 /* BEPClientUsersResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEPClientUsersResponse.h; sourceTree = "<group>"; };
 		2B60FB5B1C6D83A400EC3071 /* BEPClientUsersResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPClientUsersResponse.m; sourceTree = "<group>"; };
+		2B60FB5E1C6D8A3B00EC3071 /* BEPUsersViewControllerSearchBarReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEPUsersViewControllerSearchBarReusableView.h; sourceTree = "<group>"; };
+		2B60FB5F1C6D8A3B00EC3071 /* BEPUsersViewControllerSearchBarReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPUsersViewControllerSearchBarReusableView.m; sourceTree = "<group>"; };
 		4B551248C46F146DF2621B11 /* Pods-BehancePlayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BehancePlayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BehancePlayTests/Pods-BehancePlayTests.release.xcconfig"; sourceTree = "<group>"; };
 		4BE0F4CA870194359761268C /* Pods-BehancePlayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BehancePlayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BehancePlayTests/Pods-BehancePlayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8BA01A77ACDC27E23CFF1233 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -237,9 +240,9 @@
 		2B60FB551C6D716500EC3071 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				2B60FB501C6D715700EC3071 /* BEPUsersViewControllerCollectionViewCell.h */,
-				2B60FB511C6D715700EC3071 /* BEPUsersViewControllerCollectionViewCell.m */,
-				2B60FB521C6D715700EC3071 /* BEPUsersViewControllerCollectionViewCell.xib */,
+				2B60FB5D1C6D89A600EC3071 /* Users Cell */,
+				2B60FB5E1C6D8A3B00EC3071 /* BEPUsersViewControllerSearchBarReusableView.h */,
+				2B60FB5F1C6D8A3B00EC3071 /* BEPUsersViewControllerSearchBarReusableView.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -251,6 +254,16 @@
 				2B60FB571C6D7C2F00EC3071 /* BEPProgressHUD.m */,
 			);
 			name = Components;
+			sourceTree = "<group>";
+		};
+		2B60FB5D1C6D89A600EC3071 /* Users Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2B60FB501C6D715700EC3071 /* BEPUsersViewControllerCollectionViewCell.h */,
+				2B60FB511C6D715700EC3071 /* BEPUsersViewControllerCollectionViewCell.m */,
+				2B60FB521C6D715700EC3071 /* BEPUsersViewControllerCollectionViewCell.xib */,
+			);
+			name = "Users Cell";
 			sourceTree = "<group>";
 		};
 		3258CDDE5873A1F71CAA87E0 /* Pods */ = {
@@ -502,6 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B60FB611C6D8A3B00EC3071 /* BEPUsersViewControllerSearchBarReusableView.m in Sources */,
 				2B60FB4B1C6D6F6D00EC3071 /* BEPCommon.m in Sources */,
 				2B60FB461C6D6EEE00EC3071 /* BEPClient.m in Sources */,
 				2B60FB5C1C6D83A400EC3071 /* BEPClientUsersResponse.m in Sources */,

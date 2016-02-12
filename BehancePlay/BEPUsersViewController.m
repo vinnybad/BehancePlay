@@ -12,18 +12,22 @@
 #import "BEPUser.h"
 #import <BlocksKit/BlocksKit.h>
 #import "BEPProgressHUD.h"
+#import "BEPUsersViewControllerSearchBarReusableView.h"
 
 const struct BEPUsersViewControllerCellType {
     __unsafe_unretained NSString *UserCell;
+    __unsafe_unretained NSString *HeaderSearchCell;
 } BEPUsersViewControllerCellType;
 
 const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
-    .UserCell = @"BEPUsersViewControllerCollectionViewCell"
+    .UserCell = @"BEPUsersViewControllerCollectionViewCell",
+        .HeaderSearchCell = @"BEPUsersViewControllerSearchBarReusableView"
 };
 
-@interface BEPUsersViewController ()<UICollectionViewDataSource>
+@interface BEPUsersViewController ()<UICollectionViewDataSource, UISearchResultsUpdating, UISearchBarDelegate>
 @property (nonatomic, strong) BEPUserService *userService;
 @property (nonatomic, strong) NSArray *userResults;
+@property (nonatomic, strong) UISearchController *searchController;
 @end
 
 @implementation BEPUsersViewController
@@ -37,6 +41,7 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
     layout.itemSize = CGSizeMake( width, width );
     layout.minimumInteritemSpacing = padding;
     layout.minimumLineSpacing = padding;
+    layout.headerReferenceSize = CGSizeMake(screenSize.width, 44);
     
     self = [super initWithCollectionViewLayout:layout];
     if( self ) {
@@ -47,9 +52,12 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = NSLocalizedString(@"Users", @"Users View Controller Title");
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self registerCellTypes];
+
+    [self searchController];
 
     NSString *query = @"";
     [self updateResultsWithQuery:query];
@@ -73,6 +81,12 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
     [cellTypes bk_each:^(NSString *cellId) {
         UINib *nib = [UINib nibWithNibName:cellId bundle:nil];
         [self.collectionView registerNib:nib forCellWithReuseIdentifier:cellId];
+    }];
+    
+    NSArray *supplementaryTypes = @[ BEPUsersViewControllerCellType.HeaderSearchCell ];
+    [supplementaryTypes bk_each:^(NSString *cellId) {
+        Class class = NSClassFromString(cellId);
+        [self.collectionView registerClass:class forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:cellId];
     }];
 }
 
@@ -99,6 +113,15 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
     return cell;
 }
 
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    BEPUsersViewControllerSearchBarReusableView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:BEPUsersViewControllerCellType.HeaderSearchCell forIndexPath:indexPath];
+    [header configureWithSearchController:self.searchController];
+    return header;
+}
+
+
+#pragma mark - Getters & Setters
+
 - (BEPUserService *)userService {
     if( !_userService ) {
         _userService = [BEPUserService shared];
@@ -106,5 +129,23 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
     return _userService;
 }
 
+- (UISearchController *)searchController {
+    if( !_searchController ) {
+        _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+        _searchController.searchResultsUpdater = self;
+        _searchController.dimsBackgroundDuringPresentation = NO;
+        _searchController.searchBar.delegate = self;
+    }
+    return _searchController;
+}
+
+#pragma mark - UISearchResultsUpdating
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    NSString *query = searchController.searchBar.text;
+    [self updateResultsWithQuery:query];
+}
+
+#pragma mark - UISearchBarDelegate
 
 @end
