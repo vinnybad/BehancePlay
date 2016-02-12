@@ -6,13 +6,13 @@
 //  Copyright © 2016 Vinayak Badrinathan. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BEPCreativesViewController.h"
 
-@interface ViewController ()
+@interface BEPCreativesViewController ()
 
 @end
 
-@implementation ViewController
+@implementation BEPCreativesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

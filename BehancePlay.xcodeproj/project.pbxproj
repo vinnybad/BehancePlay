@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B60FB0C1C6D67D300EC3071 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB0B1C6D67D300EC3071 /* main.m */; };
 		2B60FB0F1C6D67D300EC3071 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB0E1C6D67D300EC3071 /* AppDelegate.m */; };
-		2B60FB121C6D67D300EC3071 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB111C6D67D300EC3071 /* ViewController.m */; };
-		2B60FB151C6D67D300EC3071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B60FB131C6D67D300EC3071 /* Main.storyboard */; };
+		2B60FB121C6D67D300EC3071 /* BEPCreativesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB111C6D67D300EC3071 /* BEPCreativesViewController.m */; };
 		2B60FB171C6D67D300EC3071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B60FB161C6D67D300EC3071 /* Assets.xcassets */; };
 		2B60FB1A1C6D67D300EC3071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B60FB181C6D67D300EC3071 /* LaunchScreen.storyboard */; };
 		2B60FB251C6D67D300EC3071 /* BehancePlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB241C6D67D300EC3071 /* BehancePlayTests.m */; };
@@ -39,9 +38,8 @@
 		2B60FB0B1C6D67D300EC3071 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B60FB0D1C6D67D300EC3071 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B60FB0E1C6D67D300EC3071 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2B60FB101C6D67D300EC3071 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2B60FB111C6D67D300EC3071 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2B60FB141C6D67D300EC3071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B60FB101C6D67D300EC3071 /* BEPCreativesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEPCreativesViewController.h; sourceTree = "<group>"; };
+		2B60FB111C6D67D300EC3071 /* BEPCreativesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BEPCreativesViewController.m; sourceTree = "<group>"; };
 		2B60FB161C6D67D300EC3071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B60FB191C6D67D300EC3071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B60FB1B1C6D67D300EC3071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,9 +101,8 @@
 			children = (
 				2B60FB0D1C6D67D300EC3071 /* AppDelegate.h */,
 				2B60FB0E1C6D67D300EC3071 /* AppDelegate.m */,
-				2B60FB101C6D67D300EC3071 /* ViewController.h */,
-				2B60FB111C6D67D300EC3071 /* ViewController.m */,
-				2B60FB131C6D67D300EC3071 /* Main.storyboard */,
+				2B60FB101C6D67D300EC3071 /* BEPCreativesViewController.h */,
+				2B60FB111C6D67D300EC3071 /* BEPCreativesViewController.m */,
 				2B60FB161C6D67D300EC3071 /* Assets.xcassets */,
 				2B60FB181C6D67D300EC3071 /* LaunchScreen.storyboard */,
 				2B60FB1B1C6D67D300EC3071 /* Info.plist */,
@@ -245,7 +242,6 @@
 			files = (
 				2B60FB1A1C6D67D300EC3071 /* LaunchScreen.storyboard in Resources */,
 				2B60FB171C6D67D300EC3071 /* Assets.xcassets in Resources */,
-				2B60FB151C6D67D300EC3071 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B60FB121C6D67D300EC3071 /* ViewController.m in Sources */,
+				2B60FB121C6D67D300EC3071 /* BEPCreativesViewController.m in Sources */,
 				2B60FB0F1C6D67D300EC3071 /* AppDelegate.m in Sources */,
 				2B60FB0C1C6D67D300EC3071 /* main.m in Sources */,
 			);
@@ -308,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2B60FB131C6D67D300EC3071 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B60FB141C6D67D300EC3071 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2B60FB181C6D67D300EC3071 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -498,6 +486,7 @@
 				2B60FB361C6D67D300EC3071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B60FB371C6D67D300EC3071 /* Build configuration list for PBXNativeTarget "BehancePlayTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +495,7 @@
 				2B60FB391C6D67D300EC3071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B60FB3A1C6D67D300EC3071 /* Build configuration list for PBXNativeTarget "BehancePlayUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +504,7 @@
 				2B60FB3C1C6D67D300EC3071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
