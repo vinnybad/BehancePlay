@@ -1,5 +1,5 @@
 //
-//  BEPCreativesViewController.h
+//  BEPUsersViewController.h
 //  BehancePlay
 //
 //  Created by Vinayak Badrinathan on 2/11/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BEPCreativesViewController : UIViewController
+@interface BEPUsersViewController : UICollectionViewController
 
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "BEPCreativesViewController.h"
+#import "BEPUsersViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window.rootViewController = [BEPCreativesViewController new];
+
+    self.window = [[UIWindow alloc] init];
+    self.window.rootViewController = [BEPUsersViewController new];
     [self.window makeKeyAndVisible];
     
     return YES;
