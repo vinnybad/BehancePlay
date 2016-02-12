@@ -8,7 +8,12 @@
 
 #import "BEPUserService.h"
 #import "BEPUser.h"
+#import "BEPClient.h"
 #import <Overcoat/Overcoat.h>
+
+@interface BEPUserService()
+@property (nonatomic, strong) BEPClient *client;
+@end
 
 @implementation BEPUserService
 
@@ -19,14 +24,14 @@
 }
 
 - (void)fetchUsersMatchingQuery:(NSString *)query andOnCompletion:(void (^)(NSError *error, NSArray *users))completionBlock {
+    [self.client fetchUsersMatchingQuery:query andOnCompletion:completionBlock];
+}
 
-    BEPUser *user = [BEPUser new];
-    user.displayName = @"Vinny Badrinathan";
-
-    if( completionBlock ) {
-        completionBlock( nil, @[user] );
+- (BEPClient *)client {
+    if( !_client ) {
+        _client = [BEPClient shared];
     }
-
+    return _client;
 }
 
 @end

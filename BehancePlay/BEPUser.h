@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/MTLModel.h>
+#import <Mantle/MTLJSONAdapter.h>
 
-@interface BEPUser : NSObject
+@interface BEPUser : MTLModel<MTLJSONSerializing>
 
 @property (nonatomic, strong) NSString *firstName, *lastName;
 @property (nonatomic, strong) NSString *username;

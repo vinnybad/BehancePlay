@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Overcoat/OVCHTTPSessionManager.h>
 
-@interface BEPClient : NSObject
+@interface BEPClient : OVCHTTPSessionManager
 
 + (instancetype)shared;
+
+- (void)fetchUsersMatchingQuery:(NSString *)query andOnCompletion:(void (^)(NSError *error, NSArray *users))completionBlock;
 
 @end
