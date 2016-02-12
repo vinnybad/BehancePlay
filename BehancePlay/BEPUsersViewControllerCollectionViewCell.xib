@@ -16,10 +16,10 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WVe-qC-mzW" userLabel="Profile Image View">
                         <rect key="frame" x="0.0" y="0.0" width="167" height="158"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGU-Zj-5KT" userLabel="Display Name Label">
-                        <rect key="frame" x="62" y="129" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGU-Zj-5KT" userLabel="Display Name Label">
+                        <rect key="frame" x="8" y="129" width="151" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -27,14 +27,21 @@
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="uGU-Zj-5KT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Lma-Og-dZM"/>
                 <constraint firstAttribute="bottom" secondItem="WVe-qC-mzW" secondAttribute="bottom" id="dlJ-qa-JI0"/>
                 <constraint firstAttribute="trailing" secondItem="WVe-qC-mzW" secondAttribute="trailing" id="fuQ-ht-msL"/>
                 <constraint firstItem="uGU-Zj-5KT" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="hlf-r3-LcN"/>
                 <constraint firstItem="WVe-qC-mzW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kh4-3T-K4e"/>
+                <constraint firstAttribute="trailing" secondItem="uGU-Zj-5KT" secondAttribute="trailing" constant="8" id="oID-p9-Fld"/>
                 <constraint firstItem="WVe-qC-mzW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sDf-ul-JE7"/>
                 <constraint firstAttribute="bottom" secondItem="uGU-Zj-5KT" secondAttribute="bottom" constant="8" id="yhS-mV-n1w"/>
             </constraints>
             <size key="customSize" width="167" height="158"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="hlf-r3-LcN"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="displayNameLabel" destination="uGU-Zj-5KT" id="LeE-3T-6pg"/>
                 <outlet property="profileImageView" destination="WVe-qC-mzW" id="P1i-pZ-9Mb"/>
