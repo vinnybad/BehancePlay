@@ -30,10 +30,13 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
 
 - (instancetype)init {
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    CGFloat padding = 5.f;
+    CGFloat width = (screenSize.width - padding * 2) / 3;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake( screenSize.width/3, screenSize.width/3);
-    layout.minimumInteritemSpacing = 5.f;
+    layout.itemSize = CGSizeMake( width, width );
+    layout.minimumInteritemSpacing = padding;
+    layout.minimumLineSpacing = padding;
     
     self = [super initWithCollectionViewLayout:layout];
     if( self ) {
