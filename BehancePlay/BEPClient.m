@@ -32,7 +32,7 @@
 }
 
 - (void)fetchUsersMatchingQuery:(NSString *)query andOnCompletion:(void (^)(NSError *error, NSArray *users))completionBlock  {
-    NSString *url = @"https://api.behance.net/v2/users?q=matias&client_id=4pLngWl2RHGkLkWPwKgoifzpXFxLmxBh";
+    NSString *url = [self searchUsersPathForQuery:query];
     
     [self GET:url parameters:nil completion:^(OVCResponse *response, NSError *error) {
         if( completionBlock ) {
@@ -40,5 +40,10 @@
         }
     }];
 }
+
+- (NSString *)searchUsersPathForQuery:(NSString *)query {
+    return [[NSString stringWithFormat:@"https://api.behance.net/v2/users?client_id=4pLngWl2RHGkLkWPwKgoifzpXFxLmxBh&q=%@", query] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+}
+
 
 @end

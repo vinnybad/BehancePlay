@@ -24,7 +24,7 @@
 }
 
 - (void)configureProfileImageView:(const BEPUser *)user {
-    UIImage *placeholderImage = [UIImage imageNamed:@"userPlaceholderImage"];
+    UIImage *placeholderImage = [UIImage imageNamed:@"placeholder"];
     [self.profileImageView setImageWithURL:user.profileImageURL placeholderImage:placeholderImage];
 }
 
