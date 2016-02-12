@@ -11,6 +11,7 @@
 #import "BEPUsersViewControllerCollectionViewCell.h"
 #import "BEPUser.h"
 #import <BlocksKit/BlocksKit.h>
+#import "BEPProgressHUD.h"
 
 const struct BEPUsersViewControllerCellType {
     __unsafe_unretained NSString *UserCell;
@@ -52,11 +53,15 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
 }
 
 - (void)updateResultsWithQuery:(NSString *)query {
+    [BEPProgressHUD display];
+    
     __weak typeof(self) weakSelf = self;
     [self.userService fetchUsersMatchingQuery:query andOnCompletion:^(NSError *error, NSArray *users) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
         strongSelf.userResults = users;
         [strongSelf.collectionView reloadData];
+
+        [BEPProgressHUD dismiss];
     }];
 }
 
