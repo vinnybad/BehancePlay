@@ -24,7 +24,7 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
         .HeaderSearchCell = @"BEPUsersViewControllerSearchBarReusableView"
 };
 
-@interface BEPUsersViewController ()<UICollectionViewDataSource, UISearchResultsUpdating, UISearchBarDelegate>
+@interface BEPUsersViewController ()<UICollectionViewDataSource, UISearchResultsUpdating>
 @property (nonatomic, strong) BEPUserService *userService;
 @property (nonatomic, strong) NSArray *userResults;
 @property (nonatomic, strong) UISearchController *searchController;
@@ -134,7 +134,6 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
         _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
         _searchController.searchResultsUpdater = self;
         _searchController.dimsBackgroundDuringPresentation = NO;
-        _searchController.searchBar.delegate = self;
     }
     return _searchController;
 }
@@ -145,7 +144,5 @@ const struct BEPUsersViewControllerCellType BEPUsersViewControllerCellType = {
     NSString *query = searchController.searchBar.text;
     [self updateResultsWithQuery:query];
 }
-
-#pragma mark - UISearchBarDelegate
 
 @end

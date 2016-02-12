@@ -12,7 +12,6 @@
 		2B60FB121C6D67D300EC3071 /* BEPUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB111C6D67D300EC3071 /* BEPUsersViewController.m */; };
 		2B60FB171C6D67D300EC3071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B60FB161C6D67D300EC3071 /* Assets.xcassets */; };
 		2B60FB1A1C6D67D300EC3071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B60FB181C6D67D300EC3071 /* LaunchScreen.storyboard */; };
-		2B60FB251C6D67D300EC3071 /* BehancePlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB241C6D67D300EC3071 /* BehancePlayTests.m */; };
 		2B60FB301C6D67D300EC3071 /* BehancePlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB2F1C6D67D300EC3071 /* BehancePlayUITests.m */; };
 		2B60FB411C6D6D3500EC3071 /* BEPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB401C6D6D3500EC3071 /* BEPUser.m */; };
 		2B60FB461C6D6EEE00EC3071 /* BEPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB451C6D6EEE00EC3071 /* BEPClient.m */; };
@@ -23,6 +22,7 @@
 		2B60FB581C6D7C2F00EC3071 /* BEPProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB571C6D7C2F00EC3071 /* BEPProgressHUD.m */; };
 		2B60FB5C1C6D83A400EC3071 /* BEPClientUsersResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB5B1C6D83A400EC3071 /* BEPClientUsersResponse.m */; };
 		2B60FB611C6D8A3B00EC3071 /* BEPUsersViewControllerSearchBarReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB5F1C6D8A3B00EC3071 /* BEPUsersViewControllerSearchBarReusableView.m */; };
+		2B60FB641C6D94CA00EC3071 /* BEPClientUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B60FB631C6D94CA00EC3071 /* BEPClientUtilTests.m */; };
 		767225E39C6443517E2C67BC /* libPods-BehancePlayTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DA49B5426B563BF8C1B07C /* libPods-BehancePlayTests.a */; };
 		9BCE51C9D3439AE454834A82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D90C5CCBBFEBC8CF766B88 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -55,7 +55,6 @@
 		2B60FB191C6D67D300EC3071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B60FB1B1C6D67D300EC3071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B60FB201C6D67D300EC3071 /* BehancePlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BehancePlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B60FB241C6D67D300EC3071 /* BehancePlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BehancePlayTests.m; sourceTree = "<group>"; };
 		2B60FB261C6D67D300EC3071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B60FB2B1C6D67D300EC3071 /* BehancePlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BehancePlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B60FB2F1C6D67D300EC3071 /* BehancePlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BehancePlayUITests.m; sourceTree = "<group>"; };
@@ -78,6 +77,8 @@
 		2B60FB5B1C6D83A400EC3071 /* BEPClientUsersResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPClientUsersResponse.m; sourceTree = "<group>"; };
 		2B60FB5E1C6D8A3B00EC3071 /* BEPUsersViewControllerSearchBarReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEPUsersViewControllerSearchBarReusableView.h; sourceTree = "<group>"; };
 		2B60FB5F1C6D8A3B00EC3071 /* BEPUsersViewControllerSearchBarReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPUsersViewControllerSearchBarReusableView.m; sourceTree = "<group>"; };
+		2B60FB631C6D94CA00EC3071 /* BEPClientUtilTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPClientUtilTests.m; sourceTree = "<group>"; };
+		2B60FB651C6D94F600EC3071 /* BEPTestsPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEPTestsPrefixHeader.pch; sourceTree = "<group>"; };
 		4B551248C46F146DF2621B11 /* Pods-BehancePlayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BehancePlayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BehancePlayTests/Pods-BehancePlayTests.release.xcconfig"; sourceTree = "<group>"; };
 		4BE0F4CA870194359761268C /* Pods-BehancePlayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BehancePlayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BehancePlayTests/Pods-BehancePlayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8BA01A77ACDC27E23CFF1233 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,8 +163,9 @@
 		2B60FB231C6D67D300EC3071 /* BehancePlayTests */ = {
 			isa = PBXGroup;
 			children = (
-				2B60FB241C6D67D300EC3071 /* BehancePlayTests.m */,
 				2B60FB261C6D67D300EC3071 /* Info.plist */,
+				2B60FB631C6D94CA00EC3071 /* BEPClientUtilTests.m */,
+				2B60FB651C6D94F600EC3071 /* BEPTestsPrefixHeader.pch */,
 			);
 			path = BehancePlayTests;
 			sourceTree = "<group>";
@@ -533,7 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B60FB251C6D67D300EC3071 /* BehancePlayTests.m in Sources */,
+				2B60FB641C6D94CA00EC3071 /* BEPClientUtilTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +687,7 @@
 			baseConfigurationReference = 4BE0F4CA870194359761268C /* Pods-BehancePlayTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREFIX_HEADER = BehancePlayTests/BEPTestsPrefixHeader.pch;
 				INFOPLIST_FILE = BehancePlayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinnybad.BehancePlayTests;
@@ -698,6 +701,7 @@
 			baseConfigurationReference = 4B551248C46F146DF2621B11 /* Pods-BehancePlayTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREFIX_HEADER = BehancePlayTests/BEPTestsPrefixHeader.pch;
 				INFOPLIST_FILE = BehancePlayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinnybad.BehancePlayTests;

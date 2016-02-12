@@ -11,6 +11,10 @@
 #import "BEPUser.h"
 #import "BEPClientUsersResponse.h"
 
+@interface BEPClient ()
+@property (nonatomic, strong) NSString *urlPrefix;
+@end
+
 @implementation BEPClient
 
 + (instancetype)shared {
@@ -42,8 +46,14 @@
 }
 
 - (NSString *)searchUsersPathForQuery:(NSString *)query {
-    return [[NSString stringWithFormat:@"https://api.behance.net/v2/users?client_id=4pLngWl2RHGkLkWPwKgoifzpXFxLmxBh&q=%@", query] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    return [[NSString stringWithFormat:@"%@&q=%@", self.urlPrefix, query] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
 }
 
+- (NSString *)urlPrefix {
+    if( !_urlPrefix ) {
+        _urlPrefix = @"https://api.behance.net/v2/users?client_id=4pLngWl2RHGkLkWPwKgoifzpXFxLmxBh";
+    }
+    return _urlPrefix;
+}
 
 @end
